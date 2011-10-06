@@ -171,7 +171,7 @@ class SyntaxHighlightNode(template.Node):
         return safestring.mark_safe(h)
     
     def preprocess_for_markdown(self, code):
-        code = code.replace('\n\n', '\n&nbsp;\n').replace('\n', '<br />')
+        code = code.strip().replace('\n\n', '\n&nbsp;\n').replace('\n', '<br />')
         return '\n\n<div class="code">%s</div>\n\n' % code
         
     def get_lexer(self, value):

@@ -347,7 +347,7 @@ class RenderHydeListingPageRewriteRulesNode(template.Node):
             rules.append(LPN_REWRITE_RULE.safe_substitute( \
                 {'name': name}))
         return \
-            "###  BEGIN GENERATED REWRITE RULES  ####\n" \
+            "###  BEGIN GENERATED REWRITE RULES  ####\nOptions -Indexes\n" \
           + ''.join(rules) \
           + "\n####  END GENERATED REWRITE RULES  ####"
 
