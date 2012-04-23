@@ -207,7 +207,7 @@ class SiteNode(object):
 
     def walk(self):
         yield self
-        for child in self.children:
+        for child in sorted(self.children, reverse=True) if self.name == "blog" else self.children:
             for node in child.walk():
                 yield node
 
