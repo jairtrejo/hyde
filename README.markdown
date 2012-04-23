@@ -402,12 +402,12 @@ To enable Typogrify, use ``{% filter typogrify %}`` in your code. Typogrify is "
 
 ## Preprocessors
 
-Main information about preprocessors can be found in 
+Main information about preprocessors can be found in
 [hyde wiki]:https://github.com/lakshmivyas/hyde/wiki/Site-Preprocessors
 
 ### Properties inclusion
 
-Is preprocessor that includes new properties into nodes. 
+Is preprocessor that includes new properties into nodes.
 Simple configuration:
   SITE_PRE_PROCESSORS = {
       '/': {
@@ -420,7 +420,7 @@ Simple configuration:
   }
 
 Processors find listing page for node and then include page.field into node.node_field, and if there is no title it falls back to node.node_field2 field.
-One can use it for translation, for example use field: page_field on native language and the use node field in template (to overcome node.name) or even add additiona menu_title to give title name to module. 
+One can use it for translation, for example use field: page_field on native language and the use node field in template (to overcome node.name) or even add additiona menu_title to give title name to module.
 N.B. you should explisitly create listing page otherwise preprocessor will not add any attribute to node.
 
 ## Base Templates
@@ -479,4 +479,4 @@ The following websites are built using hyde and are open sourced.
 - [Hubert HANGHOFER](https://github.com/brewbert)
 - [sirex](https://github.com/sirex)
 - [Alexander Vershilov](https://github.com/qnikst)
-
+- [Boris Smus](https://github.com/borismus)
