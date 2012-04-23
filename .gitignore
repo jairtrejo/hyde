@@ -8,3 +8,7 @@ deploy/*
 pylint*
 *.tmproj
 test_site
+build
+dist
+hyde.egg-info/
+pip-log.txt
