@@ -208,7 +208,10 @@ class SiteNode(object):
     def walk(self):
         yield self
         for child in sorted(self.children, reverse=True) if self.name == "blog" else self.children:
-            for node in child.walk():
+            nodes = list[child.walk()]
+            if self.name == "blog":
+                nodes = reversed(nodes)
+            for node in nodes:
                 yield node
 
     def walk_reverse(self):
